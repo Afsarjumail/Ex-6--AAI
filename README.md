@@ -36,8 +36,8 @@ def get_verbs(sentence):
         if tag.startswith('V'):  # Verbs start with 'V' in the POS tag
             verbs.append(word)
     return verbs
-
-
+```
+```
 def get_synonyms(word):
     synonyms = []
     for syn in wordnet.synsets(word):
@@ -50,8 +50,8 @@ def read_text_file(file_path):
     with open(file_path, 'r') as file:
         text = file.read()
     return text
-
-
+```
+```
 def main():
     file_path = 'sample.txt'
 
